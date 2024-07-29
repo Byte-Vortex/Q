@@ -1,0 +1,176 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #d005e2e8 -10%, #8805da 100%);
+    background-size: cover; /* Make sure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    line-height: 5vh;
+    padding: 0 20px; /* Add padding to ensure space on both sides */
+}
+
+.body-container {
+    height: 50% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+.h2-nwr{
+    text-align:center;
+    margin-top: -1%;
+    font-size: 35px;
+    width: 125%;
+    letter-spacing: 1px;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    margin-top: -30%;
+    margin-bottom: 20px; /* Add some space below the image */
+}
+.image::selection{
+    background-color: transparent;
+    color: none;
+}
+
+.login-form {
+    background: transparent;
+    margin-top: 0%;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%; /* Make it responsive */
+    max-width: 350px; /* Limit the max width */
+    text-align: center; /* Center text inside the form */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 50);
+}
+.detailcontainer {
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+.login-form label {
+    display: block;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.login-form label::selection{
+    color: none;
+    background-color: transparent;
+}
+
+h2::selection{
+    color: none;
+    background-color: transparent;
+}
+
+.login-form input {
+    background: transparent;
+    font-size: larger;
+    height: 10px;
+    text-align: center;
+    width:90%;
+    padding: 15px 0px 20px;
+    margin-bottom: 5px;
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 10, 0.5);
+    letter-spacing: 6px;
+}
+
+.login-form input::selection{
+    color: #930de6;
+    background-color: white;
+}
+
+.login-form input:focus {
+    outline: none;
+    background: linear-gradient(to bottom, #dd23eee8 0%, #a028eb 90%);
+    cursor: pointer;
+    color: white;
+}
+
+.login-form button {
+    margin: 8%;
+    margin-bottom: 10px;
+    width: 60%;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: linear-gradient(to left, #b722c4e8 -1%, #930de6 100%);
+    color: white;
+    cursor:pointer;
+    border: none;
+    border-radius: 10px;
+    transition: ease-out 0.2s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 10, 0.5);
+    z-index: 1;
+}
+
+.login-form button:focus {
+    background: linear-gradient(to left, #dd23eee8 0%, #a028eb 90%);
+    cursor: pointer;
+    color: white;
+}
+.login-form button::selection{
+    background: transparent;
+}
+
+.login-form p {
+    color: red;
+    font-weight: 400;
+    margin-top: -5px;
+    margin-bottom: -6%;
+}
+
+.login-form h2 {
+    font-size: 38px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    letter-spacing: 2px;
+}
+
+.loading-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .image {
+        width: 20%;
+    }
+
+    .login-form {
+        width: 100%; /* Ensure space on both sides */
+        max-width: none;
+    } 
+
+    .login-form input {
+        width: 100%;
+    }
+
+    .login-form button {
+        width: 80%;
+    }
+}
