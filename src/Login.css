@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background: linear-gradient(to right, #005eff -1%, #04befe 100%);
+    background: linear-gradient(to right, #1150be -1%, #2dc2f3 100%);
     background-size: cover; /* Make sure the background image covers the entire container */
     background-position: center; /* Center the background image */
     background-attachment: fixed;
